@@ -80,7 +80,7 @@
 ******************** The Hero Wrapper
 ****************************************************** -->
 
-    <div id="start" class="wrapper wrapper-gradient wrapper-no-padding wrapper-darkest wrapper-overflow-visible">
+    <div id="start" class="wrapper wrapper-gradient wrapper-no-padding wrapper-darkest wrapper-overflow-hidden">
 
       <div class="container"  id="bck-img10">
         <div class="row">
@@ -403,11 +403,11 @@
         <!-- Preloader -->
     <script type="text/javascript">
         //<![CDATA[
-            $(window).load(function() { // makes sure the whole site is loaded
+            //$(window).load(function() { // makes sure the whole site is loaded
                 $('#status').fadeOut(); // will first fade out the loading animation
                 $('#preloader').delay(50).fadeOut('slow'); // will fade out the white DIV that covers the website.
                 $('body').delay(50).css({'overflow':'visible'});
-            })
+            //})
         //]]>
     </script>
 
