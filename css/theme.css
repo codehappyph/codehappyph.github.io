@@ -8707,6 +8707,12 @@ section.contact ul.list-social li a {
   border-radius: 100%;
   color: white;
 }
+section.contact ul.list-social li.social-instagram a {
+  background-color: #1da1f2;
+}
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #0d95e8;
+}
 section.contact ul.list-social li.social-twitter a {
   background-color: #1da1f2;
 }
