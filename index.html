@@ -29,6 +29,35 @@
 		<link rel="stylesheet" href="assets/css/grt-youtube-popup.css">
 		<!--style css-->
 	    <link rel="stylesheet" href="assets/css/style.css">
+        <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
 	</head>
 	<body>
 		<!-- Preloader -->
@@ -55,12 +84,8 @@
 										<li class="menu-item active_link"><a href="index.html">Home</a>
 										</li>
 <!--                                         <li class="menu-item"><a href="about.html">About Us</a>
-                                            <ul class="sub-menu">
-												<li class="menu-item"><a href="about.html">About One</a></li>
-												<li class="menu-item"><a href="about-2.html">About Two</a></li>
-											</ul>
-                                        </li>
-										<li class="menu-item"><a href="service.html">Services</a></li>
+                                        </li> -->
+<!--										<li class="menu-item"><a href="service.html">Services</a></li>
                                         <li class="menu-item"><a href="portfolio.html">Portfolio</a>
                                             <ul class="sub-menu">
                                                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -107,13 +132,9 @@
 						<ul class="sidebar-menu">
 							<li class="menu-item"><a href="index.html">Home</a>
 							</li>
-<!--                             <li class="menu-item"><a href="about.html">About Us</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="about.html">About One</a></li>
-                                    <li class="menu-item"><a href="about-2.html">About Two</a></li>
-                                </ul>
+                             <li class="menu-item"><a href="about.html">About Us</a>
                             </li>
-							<li class="menu-item"><a href="service.html">Services</a></li>
+<!--							<li class="menu-item"><a href="service.html">Services</a></li>
 							<li class="menu-item"><a href="portfolio.html">Portfolio</a>
 								<ul class="sub-menu">
 									<li><a href="portfolio.html">Portfolio</a></li>
@@ -388,7 +409,42 @@
 		</div>
 	</section> -->
     <!-- End Portfolio Area -->
-
+        <!-- Team Start -->
+        <section class="team-area pb-5">
+            <div class="container text-center pb-lg-5 pb-0">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6>Team</h6>
+                        <h3 class="mt-3 mb-5">Our Team</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team px-4 py-5 my-2">
+                            <img src="assets/images/matt.jpg" alt="team">
+                            <h4 class="mt-3 mb-2">Matt Lebrun</h4>
+                            <p>Co-founder and Training Consultant</p>
+<!--                             <h5>Nullam id dolor id nibh ultricies vehicula. Cras mattis consectetur purus amet.</h5> -->
+                            <ul class="social mt-3">
+                                <li><a href="https://www.linkedin.com/in/cr8ivecodesmith"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team px-4 py-5 my-2">
+                            <img src="assets/images/micaela.jpg" alt="team">
+                            <h4 class="mt-3 mb-2">Micaela Reyes</h4>
+                            <p>Co-founder and Training Consultant</p>
+<!--                             <h5>Nullam id dolor id nibh ultricies vehicula. Cras mattis consectetur purus amet.</h5> -->
+                            <ul class="social mt-3">
+                                <li><a href="https://www.linkedin.com/in/codemickeycode"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team End -->
     <!-- Testimonial Start -->
 <!--     <section class="testimonial-three pb-lg-5">
         <div class="container pb-lg-5 pb-0">
@@ -550,7 +606,11 @@
 	</section> -->
 	<!-- End Blog Area -->
 
+
+<!--Remaining section-->
+
 <!-- Start footer -->
+
 <footer class="footer">
     <section class="footer-top py-5">
         <div class="container py-lg-5 py-0">
@@ -647,7 +707,12 @@
         </div>
     </div>
 </footer>
+<!-- <div w3-include-html="footer.html"></div> -->
 <!-- End footer -->
+<!-- <script>
+includeHTML();
+</script> -->
+
 <!-- jquery  -->
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 <!--modernizr js-->
@@ -674,5 +739,7 @@
 <script src="assets/js/jquery.counterup.min.js"></script>
 <!-- custom js  -->
 <script src="assets/js/custom.js"></script>
+
+
 </body>
 </html>
