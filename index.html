@@ -1,394 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- All Meta -->
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-
-    <title>CodeHappy - Python/Django Training and Consulting</title>
-
-    <!-- The CSS
-    ================================================== -->
-    <link href="css/theme.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="skrollr-body" data-spy="scroll" data-target=".navbar" class="layout-boxed-no" > <!-- "layout-boxed" class for boxed layout "layout-boxed-no" class for full size wrapper -->
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
-<!--******************************************************
-******************** The Navbar
-****************************************************** -->
-
-    <!-- Navbar Section -->
-    <div class="wrapper wrapper-navbar wrapper-no-padding wrapper-fixed  wrapper-transparent" data-0="background-color:rgba(0,0,0,0);border-bottom:1px solid rgba(255,255,255,.12);" data-150="background-color:rgba(0,0,0,.9);border-bottom:1px solid rgba(255,255,255,0);">
-      <nav class="navbar navbar-inverse navbar-transparent">
-        <div class="container">
-
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <span>
-              <a href="/">
-                <img style="float: left; padding-top: 20px; padding-left: 10px; padding-right: 10px; " src="img/codehappy-logo-white-1.png">
-              </a>
-            </span>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#start">Who We Are</a></li>
-                  <li><a href="#work">What We Do</a></li>
-                  <li><a href="#values">Our Values</a></li>
-                  <li><a href="#contact">Let's Talk</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-    </div>
-
-<!--******************************************************
-******************** The Hero Wrapper
-****************************************************** -->
-
-    <div id="start" class="wrapper wrapper-gradient wrapper-no-padding wrapper-darkest wrapper-overflow-hidden">
-
-
-
-        <div class="container wrapper-xl">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h2 class="headline">Hello, we're CodeHappy!</h2>
-                            <p class="lead">a small team of Software Engineers from the Philippines with over a decade of industry experience and an insane love for what we do.</p>
-                            <p class="lead">We provide Python Training and Consulting Services.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/hero-screen2.png" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mouse_scroll animated bounceInDown" ><a href="#work"><i class="fa fa-angle-down fa-2x fa-border-circle"></i></a></div>
-    </div>
-
-<!--******************************************************
-********************
-****************************************************** -->
-    <div id="work"></div>
-    <div class="wrapper wrapper-lg wrapper-lightest" id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center wrapper-xs wrapper-no-padding-top">
-              <h2>What We Do</h2>
-              <p class="lead">We help teams become successful by enabling their Python development capabilities.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-<!--******************************************************
-******************** The img8 wrapper
-****************************************************** -->
-
-
-    <div class="wrapper  wrapper-sm wrapper-default wrapper-no-padding-bottom wrapper-md wrapper-half-right wow fadeIn">
-
-        <div class="container wrapper-lg">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h4>Technical Capability Building</h4>
-                            <h6> TRAINING · WORKSHOPS </h6>
-                            <p class="lead">We offer packaged and custom workshops for:
-                                <ul class="lead">
-                                    <li>Core Python Development</li>
-                                    <li>Python Web Development</li>
-                                    <li>Python Data Processing</li>
-                                    <li>Linux Essentials</li>
-                                    <li>Git Essentials</li>
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- page title -->
+		<title>CodeHappy - Python Training & Coaching</title>
+		<!-- Favicon Icon -->
+    	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+		<!-- All css -->
+		<!--Bootstrap css-->
+	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    <!-- Fontawesome css -->
+	    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	    <!-- slick fader css -->
+	    <link rel="stylesheet" href="assets/css/slick.css">
+	    <link rel="stylesheet" href="assets/css/slick-theme.css">
+	    <!-- sidebar-menu -->
+	    <link rel="stylesheet" href="assets/css/sidebar-menu.css">
+	    <!--animate css-->
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<!--Owl css-->
+		<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
+	    <!--video css-->
+		<link rel="stylesheet" href="assets/css/grt-youtube-popup.css">
+		<!--style css-->
+	    <link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div class="preloader">
+			<div class="lds-ripple">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- Start header_area -->
+		<header class="header_area header_v1 transparent_header">
+			<div class="container">
+				<div class="site_menu">
+					<div class="row align-items-center">
+						<div class="col-lg-2">
+							<div class="brand">
+								<a href="index.html" class="logo"><img src="assets/images/codehappy-logo-small.png" class="img-fluid" alt=""></a>
+							</div>
+						</div>
+						<div class="col-lg-10">
+							<div class="primary_menu" id="menu">
+								<nav class="main_menu">
+									<ul>
+										<li class="menu-item active_link"><a href="index.html">Home</a>
+											<ul class="sub-menu">
+											</ul>
+										</li>
+<!--                                         <li class="menu-item"><a href="about.html">About Us</a>
+                                            <ul class="sub-menu">
+												<li class="menu-item"><a href="about.html">About One</a></li>
+												<li class="menu-item"><a href="about-2.html">About Two</a></li>
+											</ul>
+                                        </li>
+										<li class="menu-item"><a href="service.html">Services</a></li>
+                                        <li class="menu-item"><a href="portfolio.html">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li>
+										<li class="menu-item"><a href="#">Blog</a>
+											<ul class="sub-menu">
+												<li class="menu-item"><a href="blog.html">Blog</a></li>
+												<li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
+											</ul>
+										</li>
+										<li class="menu-item"><a href="contact.html">Contact Us</a></li> -->
+										<li class="menu-item"><a href="mailto:hello@codehappy.ph?subject=I'd like to work with you" class="deneb_btn">Hire Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mobile_wrapper">
+					<div class="mobile_header">
+						<div class="row align-items-center">
+							<div class="col-6">
+								<div class="brand_logo">
+									<a href="#"><img src="assets/images/codehappy-logo-small.png" class="img-fluid" alt=""></a>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="menu_button">
+									<div class="menu_icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidenav_menu">
+						<div class="close_icon">
+							<a href="#" class="close_btn"><i class="fas fa-times"></i></a>
+						</div>
+						<ul class="sidebar-menu">
+							<li class="menu-item"><a href="#">Home</a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="index.html">Home One</a></li>
+									<li class="menu-item"><a href="index-2.html">Home Two</a></li>
+                                    <li class="menu-item"><a href="index-3.html">Home Three</a></li>
+								</ul>
+							</li>
+                            <li class="menu-item"><a href="about.html">About Us</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="about.html">About One</a></li>
+                                    <li class="menu-item"><a href="about-2.html">About Two</a></li>
                                 </ul>
+                            </li>
+							<li class="menu-item"><a href="service.html">Services</a></li>
+							<li class="menu-item"><a href="portfolio.html">Portfolio</a>
+								<ul class="sub-menu">
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="portfolio-details.html">Portfolio Details</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="blog.html">Blog</a>
+								<ul class="sub-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li class="menu-item"><a href="contact.html">Contact Us</a></li>
+							<li class="menu-item"><a href="contact.html" class="deneb_btn">Hire Us</a></li>
+						</ul>
+					</div>
+				</div>
+            </div>
+        </header><!-- End header_area -->
+
+        <!-- Hero Start -->
+        <section class="hero-three">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-sm-6">
+                        <div class="banner_content wow fadeInLeft">
+                            <h2 class="mb-4">We are a <span><br>Python training & coaching</span> company</span></h2>
+                            <p class="mb-5">We’re a small team of Software Engineers from the Philippines with over a decade of industry experience and an insane love for what we do.
                             </p>
-                            <p class="lead">
-                            We design and develop training courses according to your company's goals and needs.
-                            </p>
+                            <a href="#about-us" class="deneb_btn">Lets Explore</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/training-badge.png" class="img-responsive img-circle" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-lg-7 col-sm-6">
+                        <img src="assets/images/product-launch.png" class="img-fluid wow fadeInUp" alt="product-launch">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <!-- Hero End -->
 
-<!--******************************************************
-******************** The img9 wrapper
-****************************************************** -->
-    <div class="wrapper wrapper  wrapper-sm wrapper-lighter wrapper-no-padding-bottom wrapper-md wrapper-half-left wow fadeIn">
-        <div class="container wrapper-lg">
+        <!-- About Start -->
+        <section id="about-us" class="about-three py-5">
+            <div class="container py-lg-5 py-md-4 py-sm-4 py-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 img">
+                        <img src="assets/images/Designer.png" class="img-fluid" alt="designer">
+                    </div>
+                    <div class="col-lg-6 pl-lg-5">
+                        <h6>ABOUT US</h6>
+                        <h3 class="mt-3 mb-4">We are passionate about Python, Open Source, Software Craftsmanship and Engineering Culture.</h3>
+                        <p>CodeHappy is a grassroots business built as a result of our passion for learning and teaching. We help teams become successful by enabling their Python development capabilities through our training, coaching and consulting services.</p>
+
+
+                    </div>
+                </div>
+<!--                 <div class="row mt-lg-5 mt-4 py-3 text-center counters">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count p-4 wow fadeInUp">
+                            <img src="assets/images/icon_7.png" class="img-fluid" alt="">
+                            <h2 class="mt-3 mb-2"><span class="count-num">300</span>+</h2>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count p-4 wow fadeInUp">
+                            <img src="assets/images/icon_8.png" class="img-fluid" alt="">
+                            <h2 class="mt-3 mb-2"><span class="count-num">250</span>+</h2>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count p-4 wow fadeInUp">
+                            <img src="assets/images/icon_9.png" class="img-fluid" alt="">
+                            <h2 class="mt-3 mb-2"><span class="count-num">200</span>+</h2>
+                            <p>Active Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count p-4 wow fadeInUp">
+                            <img src="assets/images/icon_10.png" class="img-fluid" alt="">
+                            <h2 class="mt-3 mb-2"><span class="count-num">5</span>+</h2>
+                            <p>Years Exerience</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <section class="service-three py-5">
+            <div class="container py-lg-5 py-md-4 py-sm-4 py-0">
+                <div class="row text-center">
+                    <div class="col-lg-7 mx-auto">
+                        <h6>Services</h6>
+                        <h3 class="mt-3 mb-lg-5 mb-md-4 mb-sm-4 mb-3">What We Do</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div>
+                              <div class="icon icon-svg mr-4"><img src="assets/images/code.png" alt=""></div>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Technical Training</h4>
+                                <p>We offer packaged 1-3 day workshops for:
+                                <ul>
+                                    <li>- Core Python Development</li>
+                                    <li>- Python Web Development</li>
+                                    <li>- Python Data Processing</li>
+                                    <li>- Linux Essentials</li>
+                                    <li>- Git Essentials</li>
+                                </ul>
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div>
+                              <div class="icon icon-svg mr-4"><img src="assets/images/seo.png" alt=""></div>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Internship & Upskilling Programs</h4>
+                                <p>We can help you build or grow your Python team through training and coaching. We can talk about what your team needs and co-develop an internship or upskilling programs with you.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div>
+                              <div class="icon icon-svg mr-4"><img src="assets/images/software-developer.png" alt=""></div>
+                            </div>
+
+                            <div>
+                                <h4 class="mb-2">Coaching & Mentoring</h4>
+                                <p>Technical training is only one part of the equation in developing a mature and well rounded software team. We operate with the belief that the individual has the capabilities within them. Our coaching and mentoring service is meant to utilize our years of experience in the industry to bring direction and accountability towards bringing out their full potential.
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                              <div class="icon icon-svg mr-4"><img src="assets/images/mobile-app.png" alt=""></div>
+                              <div>
+                                <h4 class="mb-2">Custom Course Development</h4>
+                                <p>CodeHappy can be engaged in developing custom training for your team. Our expertise lies in all things Linux and Python. It’s a broad range but it is basically anything within the spectrum of how Linux and Python is utilized in software engineering.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div>
+                              <div class="icon icon-svg mr-4"><img src="assets/images/digital-marketing.png" alt=""></div>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Team Culture Engineering</h4>
+                                <p>Cultivating team culture/collaboration, building camaraderie for a distributed team, facilitating a safe space and fostering an engineering culture.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-4 my-md-4 my-sm-3 my-3 col-sm-6 wow fadeInUp">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div>
+                              <div class="icon icon-svg mr-4"><img src="assets/images/research.png" alt=""></div>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Strategy & Research</h4>
+                                <p>R&D, software architecture, risk assessment, helping you create an implementation strategy as well as setup an effective development process.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+
+        <!-- Start Portfolio Area -->
+<!-- 		<section class="portfolio_area section-margin portfolio-three pb-lg-5  pb-md-4 pb-4" id="portfolio">
+			<div class="container mb-5">
+			<div class="row">
+				<div class="col-lg-7 mx-auto mb-5">
+					<div class="text-center">
+                        <h6>Portfolio</h6>
+						<h3 class="mt-3">Our Works</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">all</li>
+					<li data-filter=".popular">popular</li>
+					<li data-filter=".latest"> latest</li>
+					<li data-filter=".following">following</li>
+					<li data-filter=".upcoming">upcoming</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row portfolio-grid">
+					<div class="grid-sizer col-md-3 col-lg-3"></div>
+					<div class="col-lg-6 col-md-6 all following">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p1.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all latest popular upcoming">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p4.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 all latest following">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p2.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 all latest upcoming">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p3.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all popular">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p6.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 all popular latest following">
+						<div class="single_portfolio">
+							<img class="img-fluid w-100" src="assets/images/portfolio/p5.jpg" alt="">
+							<div class="overlay"></div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
+								<p>Art, Illustration</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section> -->
+    <!-- End Portfolio Area -->
+
+    <!-- Testimonial Start -->
+<!--     <section class="testimonial-three pb-lg-5">
+        <div class="container pb-lg-5 pb-0">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/technical-leadership-badge.png" class="img-responsive img-circle" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h4>Technical Leadership</h4>
-                            <p class="lead">
-                            R&D, software architecture, risk assessment, helping you create an implementation strategy as well as set-up an effective development process.
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-lg-7 mx-auto text-center mb-5">
+                    <h6>Testimonial</h6>
+                    <h3 class="mt-3">What People Say</h3>
                 </div>
             </div>
-        </div>
-    </div>
-
-<!--******************************************************
-******************** The img8 wrapper
-****************************************************** -->
-
-    <div class="wrapper  wrapper-sm wrapper-default wrapper-no-padding-bottom wrapper-md wrapper-half-right wow fadeIn">
-        <div class="container wrapper-lg">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h4>Team Culture Engineering</h4>
-                            <p class="lead">
-                            Cultivating team culture/collaboration, building camaraderie for a distributed team, facilitating a safe-space and fostering an engineering culture.
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="pic">
+                                <img src="assets/images/t1.png">
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
                             </p>
+                            <div class="testimonial-profile">
+                                <h3 class="title">williamson-</h3>
+                                <span class="post">Web Developer</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/team-culture-engineering-badge1.png" class="img-responsive img-circle" alt="">
-                                </div>
+
+                        <div class="testimonial">
+                            <div class="pic">
+                                <img src="assets/images/t2.png">
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                            </p>
+                            <div class="testimonial-profile">
+                                <h3 class="title">Kristina-</h3>
+                                <span class="post">Web Designer</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="pic">
+                                <img src="assets/images/t3.png">
+                            </div>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                            </p>
+                            <div class="testimonial-profile">
+                                <h3 class="title">Steve Thomas-</h3>
+                                <span class="post">Web Developer</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row align-items-center clients text-center mt-4">
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c1.png" alt="client" class="wow fadeInLeft">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c2.png" alt="client" class="wow fadeInLeft">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c3.png" alt="client" class="wow fadeInLeft">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c4.png" alt="client" class="wow fadeInLeft">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c5.png" alt="client" class="wow fadeInLeft">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 client">
+                    <img src="assets/images/c6.png" alt="client" class="wow fadeInLeft">
+                </div>
+            </div>
         </div>
-    </div>
+    </section> -->
+    <!-- Testimonial End -->
 
-<!--******************************************************
-******************** The img8 wrapper
-****************************************************** -->
+    <!-- Start Blog Area -->
+<!-- 	<section class="blog-area blog-three section-gap mt-lg-0 mt-md-5 mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="text-center">
+                        <h6>Blog</h6>
+						<h3 class="mt-3 mb-lg-5 mb-md-4 mb-sm-4 mb-4">Our blog</h3>
+					</div>
+				</div>
+			</div>
 
-    <div id="values" class="wrapper  wrapper-sm wrapper-lighter wrapper-no-padding-bottom wrapper-md wrapper-half-right wow fadeIn">
-        <div class="container wrapper-lg">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+							<img class="img-fluid" src="assets/images/b1.jpg" alt="">
+						</div>
+						<div class="short_details">
+							<div class="meta-top d-flex">
+								<a href="#"><i class="far fa-user"></i> Admin post</a>
+								<a href="#"><i class="far fa-calendar"></i> Sep 20, 2020</a>
+							</div>
+							<a class="d-block" href="blog-details.html">
+								<h4>Shall every fourth lesser have...</h4>
+							</a>
+							<div class="text-wrap">
+								<p>
+									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+								</p>
+							</div>
+							<a href="#" class="link_btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+							<img class="img-fluid" src="assets/images/b2.jpg" alt="">
+						</div>
+						<div class="short_details">
+							<div class="meta-top d-flex">
+								<a href="#"><i class="far fa-user"></i> Admin post</a>
+								<a href="#"><i class="far fa-calendar"></i> Aug 29, 2020</a>
+							</div>
+							<a class="d-block" href="blog-details.html">
+								<h4>Horse play gorless knees up...</h4>
+							</a>
+							<div class="text-wrap">
+								<p>
+									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+								</p>
+							</div>
+							<a href="#" class="link_btn">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-blog">
+						<div class="thumb">
+							<img class="img-fluid" src="assets/images/b3.jpg" alt="">
+						</div>
+						<div class="short_details">
+							<div class="meta-top d-flex">
+								<a href="#"><i class="far fa-user"></i> Admin post</a>
+								<a href="#"><i class="far fa-calendar"></i> Jul 14, 2020</a>
+							</div>
+							<a class="d-block" href="blog-details.html">
+								<h4>Quisque felis ligula semper...</h4>
+							</a>
+							<div class="text-wrap">
+								<p>
+									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
+								</p>
+							</div>
+							<a href="#" class="link_btn">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- End Blog Area -->
 
-            <div class="row">
-
-                <div class="col-sm-6">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <img src="img/codehappy-values.png" class="img-responsive img-circle" alt="">
+<!-- Start footer -->
+<footer class="footer">
+    <section class="footer-top py-5">
+        <div class="container py-lg-5 py-0">
+            <div class="row widget_wrapper">
+                <div class="col-lg-5">
+                    <div class="widget widegt_about">
+                        <div class="widget_title">
+                            <img src="assets/images/codehappy-logo-small.png" class="img-fluid" alt="">
+                        </div>
+                        <p>Python + Open Source + Software Craftsmanship + Engineering Culture
+                        </p>
+                        <p>We help teams become successful by enabling their Python development capabilities.</p>
+                        <ul class="social">
+                            <li><a href="https://www.linkedin.com/company/codehappyph"><i class="fab fa-linkedin-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/codehappyph"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/codehappyph"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/codehappyph"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--                 <div class="col-lg-2">
+                    <div class="widget widget_link">
+                        <div class="widget_title">
+                            <h4>Links</h4>
+                        </div>
+                        <ul>
+                            <li><i class="far fa-clone"></i><a href="#">About Us</a></li>
+                            <li><i class="far fa-clone"></i><a href="#">Services</a></li>
+                            <li><i class="far fa-clone"></i><a href="#">Portfolio</a></li>
+                            <li><i class="far fa-clone"></i><a href="#">Blog</a></li>
+                            <li><i class="far fa-clone"></i><a href="#">Contact</a></li>
+                            <li><i class="far fa-clone"></i><a href="#">Tears</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-lg-5">
+                    <div class="widget widget_contact">
+                        <div class="widget_title">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <div class="contact_info">
+<!--                             <div class="single_info">
+                                <div class="icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <p><a href="tel:+919246147999">1800-121-3637</a></p>
+                                    <p><a href="tel:+919246147999">+91 924-614-7999</a></p>
+                                </div>
+                            </div> -->
+                            <div class="single_info">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info">
+                                    <p><a href="mailto:hello@codehappy.ph">hello@codehappy.ph</a></p>
+                                </div>
+                            </div>
+                            <div class="single_info">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <p>Makati City, Metro Manila,<span>Philippines.</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="col-sm-6">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h3>Our Values</h3>
-                            </br>
-                            <p class="lead">Our work is defined by our 3 pillars:
-                            </p>
-                            <ol class="lead">
-                                <li>Python and Open Source.</li>
-                                </p>We focus on Python and Open Source Technologies.
-                                Python is our programming language of choice for work and hobby projects because it's very powerful yet still simple, practical and fun to use.
-                                Open Source because the open source culture is more than just about reusing free code to get products to market faster. It is an ethos that values openness, collaboration, and excellence.</p>
-                                <li>Software Craftsmanship</li>
-                                <p> We value and promote software craftsmanship.</p>
-                                <li>Engineering Culture</li>
-                                <p> We believe that a healthy team culture is key to building a passionate and high-performing team.</p>
-                            </ol>
+<!--                 <div class="col-lg-4">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <h4>Subscribe</h4>
                         </div>
+                        <p>Quisque orci nisl, viverra et sem ac, tincidunt egestas massa.</p>
+                        <form>
+                            <input type="email" class="form_control my-4" placeholder="Your Email">
+                            <button class="deneb_btn">Subscribe</button>
+                        </form>
                     </div>
-                </div>
-
-            </div>
-                <div class="col-sm-8">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div>
-
-<!--******************************************************
-******************** The CTA wrapper
-****************************************************** -->
-<!-- <div id="contact">
-    <div class="wrapper wrapper-darker wrapper-lg wow fadeIn">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h4>Think we could help?</h4>
-            <p>
-              ...or Didn't find what you need? We could still help. Talk to us
-              <a href="mailto:hello@codehappy.ph">hello@codehappy.ph</a>
-            </p>
-            <p>
-              Expect a meaningful reply within 48 hours.
-              <i class="fa fa-coffee" aria-hidden="true"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div> -->
-
-
-
-
-<section id="contact" class="cta">
-    <div class="cta-content">
+    </section>
+    <div class="copyright_area">
         <div class="container">
-            <h3>Think we could help?</h3>
-            <h4>
-              Let's talk!
-              <a href="mailto:hello@codehappy.ph">hello@codehappy.ph</a>
-            </h4>
-            <p>
-              Let's get you from point A to point B.
-              <i class="fa fa-coffee" aria-hidden="true"></i>
-            </p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_text py-2">
+                        <p>Copyright © 2021 <span>CodeHappy</span>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="overlay"></div>
-</section>
-
-<section id="contact" class="contact wrapper-lighter wrapper-sm">
-    <div class="container">
-        <h4>Check out what we've been up to.</i></h4>
-        <ul class="list-inline list-social">
-            <li class="social-linkedin">
-                <a href="https://www.linkedin.com/company/codehappyph"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li class="social-instagram">
-                <a href="https://www.instagram.com/codehappyph"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="social-facebook">
-                <a href="https://www.facebook.com/codehappyph"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="social-twitter">
-                <a href="https://twitter.com/codehappyph"><i class="fa fa-twitter"></i></a>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2016 CodeHappy. All Rights Reserved.</p>
-        <p>made with <i class="fa fa-heart"></i> & <i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;in Manila, PH.</p>
     </div>
 </footer>
-<!--******************************************************
-******************** assets and scripts
-****************************************************** -->
-
-
-    <!-- All core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js" type="text/javascript"></script> <!-- A must-have - dont remove it! -->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- A must-have - dont remove it! -->
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script> <!-- The slider script - remove if you don´t use it -->
-    <script src="js/smoothscroll.min.js" type="text/javascript"></script> <!-- smoothscrolling script - remove if you don´t use it -->
-    <script src="js/skrollr.min.js" type="text/javascript"></script><!--  The scolling script for parallax effects - remove if you don´t use it -->
-
-    <!-- Init the Owl Carousel slider script - remove this code if it is not in use -->
-    <script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-        animateOut: 'fadeOut',
-        autoHeight:true,
-        items:1,
-        loop: true,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        margin:0,
-        stagePadding:0,
-        smartSpeed:1000
-    });
-    </script>
-
-    <!-- Init the parallax script - if you don´t load it above remove it here too -->
-    <script type="text/javascript">
-        var s = skrollr.init();
-    </script>
-
-    <!-- Preloader -->
-    <script type="text/javascript">
-        //<![CDATA[
-            //$(window).load(function() { // makes sure the whole site is loaded
-                $('#status').fadeOut(); // will first fade out the loading animation
-                $('#preloader').delay(50).fadeOut('slow'); // will fade out the white DIV that covers the website.
-                $('body').delay(50).css({'overflow':'visible'});
-            //})
-        //]]>
-    </script>
-
-  </body>
+<!-- End footer -->
+<!-- jquery  -->
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<!--modernizr js-->
+<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<!-- Bootstrap js  -->
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<!-- slick fader js  -->
+<script src="assets/js/vendor/slick.min.js"></script>
+<!-- isotope js  -->
+<script src="assets/js/vendor/isotope.min.js"></script>
+<!-- imageloaded js-->
+<script src="assets/js/vendor/imagesloaded.min.js"></script>
+<!--sidebar js-->
+<script src="assets/js/vendor/sidebar-menu.js"></script>
+<!--wow js-->
+<script src="assets/js/vendor/wow.min.js"></script>
+<!-- owl js  -->
+<script src="assets/owl-carousel/owl.carousel.min.js"></script>
+<!-- video js  -->
+<script src="assets/js/grt-youtube-popup.js"></script>
+<!-- Counter js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- custom js  -->
+<script src="assets/js/custom.js"></script>
+</body>
 </html>
