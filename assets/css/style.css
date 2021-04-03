@@ -715,9 +715,9 @@ input.form_control {
     height: 397px;
     z-index: -1;
     border-radius: 8px;
-    background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    background-image: -webkit-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%); }
+    background-image: -moz-linear-gradient(0deg, #f15d22 0%, #feb000 100%);
+    background-image: -webkit-linear-gradient(0deg, #f15d22 0%, #feb000 100%);
+    background-image: -ms-linear-gradient(0deg, #f15d22 0%, #feb000 100%); }
     @media (max-width: 767px) {
       .service_wrapper .service_tab_wrap .tab-content .deneb_img_box:after {
         display: none; } }
