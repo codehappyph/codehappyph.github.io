@@ -91,6 +91,9 @@ h2{letter-spacing:-1.4px;line-height:1.18}
 .logo-grid img{max-width:150px;height:60px}
 .profile h3{line-height:1.25}
 .profile .eyebrow{letter-spacing:.6px}
+.profile-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:25px}
+.profile-links .text-link{margin-top:0;min-height:44px;gap:8px}
+.profile-links svg{flex-shrink:0}
 .portrait{border-width:3px;box-shadow:none}
 .subscribe-row input{border-radius:6px}
 /* Help visitors understand the team, choose a starting point, and inquire. */
