@@ -1,1071 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<!-- All Meta -->
-
-	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="description" content="CodeHappy - Python Training in the Philippines">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <!-- page title -->
-		<title>CodeHappy - Python Training in the Philippines</title>
-		<!-- Favicon Icon -->
-    	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
-		<!-- All css -->
-		<!--Bootstrap css-->
-	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	    <!-- Fontawesome css -->
-	    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
-	    <!-- slick fader css -->
-	    <link rel="stylesheet" href="assets/css/slick.css">
-	    <link rel="stylesheet" href="assets/css/slick-theme.css">
-	    <!-- sidebar-menu -->
-	    <link rel="stylesheet" href="assets/css/sidebar-menu.css">
-	    <!--animate css-->
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<!--Owl css-->
-		<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
-	    <!--video css-->
-		<link rel="stylesheet" href="assets/css/grt-youtube-popup.css">
-		<!--style css-->
-	    <link rel="stylesheet" href="assets/css/style.css">
-        <script>
-        function includeHTML() {
-          var z, i, elmnt, file, xhttp;
-          /* Loop through a collection of all HTML elements: */
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-              /* Make an HTTP request using the attribute value as the file name: */
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                  /* Remove the attribute, and call this function once more: */
-                  elmnt.removeAttribute("w3-include-html");
-                  includeHTML();
-                }
-              }
-              xhttp.open("GET", file, true);
-              xhttp.send();
-              /* Exit the function: */
-              return;
-            }
-          }
-        }
-        </script>
-	</head>
-	<body>
-		<!-- Preloader -->
-		<div class="preloader">
-			<div class="lds-ripple">
-				<div></div>
-				<div></div>
-			</div>
-		</div>
-		<!-- Start header_area -->
-		<header class="header_area header_v1 transparent_header">
-<!--             <div class="ribbon">
-                <a href="https://ti.to/codehappyph/public-data-processing-python-workshop" class="ribbon-link">
-                    <strong>April 2024 Cohort - CodeHappy Python Data Processing Workshop</strong>. Enroll Now! Classes start April 6!
-                </a>
-            </div> -->
-            <!-- Navigation Menu Below -->
-            <nav>
-                <!-- Your navigation links here -->
-            </nav>
-
-			<div class="container">
-				<div class="site_menu">
-					<div class="row align-items-center">
-						<div class="col-lg-2">
-							<div class="brand">
-								<a href="index.html" class="logo"><img src="assets/images/codehappy-logo-small.png" class="img-fluid" alt=""></a>
-							</div>
-						</div>
-						<div class="col-lg-10">
-							<div class="primary_menu" id="menu">
-								<nav class="main_menu">
-									<ul>
-<!--                                         <li class="menu-item active_link"><a href="index.html">Home</a>
-                                        </li> -->
- 										<li class="menu-item"><a href="index.html">Home</a>
-										</li>
-                                        <li class="menu-item"><a href="#about-us">About Us</a>
-                                        </li>
-                                        <li class="menu-item"><a href="#services">Services</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#what-we-do">What We Do</a></li>
-                                                <li class="menu-item"><a href="#courses">Training Courses</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="#why-us">Why Choose Us?</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="#why-us">Why Choose Us?</a></li>
-                                                <li class="menu-item"><a href="#values">Our Values</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="#team">Our Team</a>
-                                        </li>
-<!--										<li class="menu-item"><a href="service.html">Services</a></li>
-                                        <li class="menu-item"><a href="portfolio.html">Portfolio</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="portfolio.html">Portfolio</a></li>
-                                                <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                            </ul>
-                                        </li>
-										<li class="menu-item"><a href="#">Blog</a>
-											<ul class="sub-menu">
-												<li class="menu-item"><a href="blog.html">Blog</a></li>
-												<li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-											</ul>
-										</li>
-										<li class="menu-item"><a href="contact.html">Contact Us</a></li> -->
-										<li class="menu-item"><a href="mailto:hello@codehappy.ph?subject=I'd like to work with you" class="deneb_btn">Contact Us</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mobile_wrapper">
-					<div class="mobile_header">
-						<div class="row align-items-center">
-							<div class="col-6">
-								<div class="brand_logo">
-									<a href="#"><img src="assets/images/codehappy-logo-small.png" class="img-fluid" alt=""></a>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="menu_button">
-									<div class="menu_icon">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sidenav_menu">
-						<div class="close_icon">
-							<a href="#" class="close_btn"><i class="fas fa-times"></i></a>
-						</div>
-						<ul class="sidebar-menu">
-<!-- 							<li class="menu-item"><a href="index.html">Home</a>
-							</li> -->
-                             <li class="menu-item"><a href="#about-us">About Us</a>
-                            </li>
-                            <li class="menu-item"><a href="#services">Services</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#what-we-do">What We Do</a></li>
-                                    <li class="menu-item"><a href="#courses">Training Courses</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#why-us">Why Choose Us?</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#why-us">Why Choose Us?</a></li>
-                                    <li class="menu-item"><a href="#values">Our Values</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#team">Our Team</a>
-                            </li>
-<!--							<li class="menu-item"><a href="service.html">Services</a></li>
-							<li class="menu-item"><a href="portfolio.html">Portfolio</a>
-								<ul class="sub-menu">
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a href="blog.html">Blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a href="contact.html">Contact Us</a></li> -->
-							<li class="menu-item"><a href="mailto:hello@codehappy.ph?subject=I'd like to work with you" class="deneb_btn">Hire Us</a></li>
-						</ul>
-					</div>
-				</div>
-            </div>
-        </header><!-- End header_area -->
-
-        <!-- Hero Start -->
-        <section class="hero-three">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-sm-6">
-                        <div class="banner_content wow fadeInLeft">
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            </br>
-                            <h2 class="mb-4">Hone your<span> craft.</span></br>Love what you<span> do.</span></h2>
-                            <p class="mb-5">
-                            <strong>Python training that targets your needs</strong>. We focus on <span>practical data skills</span> and <span>key software engineering</span> expertise.
-                            </p>
-                            <a href="https://calendly.com/codehappy-mickey/15min-call" class="deneb_btn">Book a free consultation</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-sm-6">
-                        <img src="assets/images/hero-launch.png" class="img-fluid wow fadeInUp" alt="product-launch">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hero End -->
-
-        <!-- About Start -->
-        <section id="about-us" class="about-three py-5">
-            <div class="container py-lg-5 py-md-4 py-sm-4 py-0">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 img">
-                        <img src="assets/images/about-us.png" class="img-fluid" alt="designer">
-                    </div>
-                    <div class="col-lg-6 pl-lg-5">
-                        <h6>ABOUT US</h6>
-                        <h4 class="mt-3 mb-4">We’re a small team of Software Engineers from the Philippines with over a decade of industry experience and an <strong>insane love for what we do.</strong></h4>
-                        <p>We are a grassroots business built as a result of our passion for learning and teaching.</p>
-                        <p></br>We have trained and coached software engineers in the telecoms, fintech, and outsourcing industries, and the Philippine Navy.</p>
-                        <h5 class="mt-3 mb-4"></br>So what's our story?</h5>
-                        <p>It started at a point when we became in charge of hiring new people for our dev teams. It was when we noticed a <strong>shortage of tech talents with the right skills</strong>.
-                        </p>
-                        <p></br>Realizing that a <strong>key problem lies with the huge gap between the academe and the industry</strong>, we developed training and coaching programs to fill those gaps.
-                        </p>
-                        <p></br>Since then, we made it our personal mission to teach practical software development skills for tech professionals and leaders in the Philippines.
-                        </p>
-                        <p></br><strong>Tech is a very democratizing career</strong> and <strong>skills pay the bills</strong>. Our goal is to <strong>empower</strong> individuals with the <strong>right skills and mindset</strong> for honing their craft and helping them succeed.
-                        </p>
-                        <p></br>We believe <strong>skills truly fulfill their potential and purpose</strong> when <strong>paired with passion</strong>. That's why we're called CodeHappy.
-                        </p>
-
-                    </div>
-                </div>
-<!--                 <div class="row mt-lg-5 mt-4 py-3 text-center counters">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count p-4 wow fadeInUp">
-                            <img src="assets/images/icon_7.png" class="img-fluid" alt="">
-                            <h2 class="mt-3 mb-2"><span class="count-num">300</span>+</h2>
-                            <p>Projects Done</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count p-4 wow fadeInUp">
-                            <img src="assets/images/icon_8.png" class="img-fluid" alt="">
-                            <h2 class="mt-3 mb-2"><span class="count-num">250</span>+</h2>
-                            <p>Happy Customers</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count p-4 wow fadeInUp">
-                            <img src="assets/images/icon_9.png" class="img-fluid" alt="">
-                            <h2 class="mt-3 mb-2"><span class="count-num">200</span>+</h2>
-                            <p>Active Projects</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count p-4 wow fadeInUp">
-                            <img src="assets/images/icon_10.png" class="img-fluid" alt="">
-                            <h2 class="mt-3 mb-2"><span class="count-num">5</span>+</h2>
-                            <p>Years Exerience</p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <!-- About End -->
-
-        <!-- Service Start -->
-        <section id="services" class="service-three py-5">
-            <div id="what-we-do" class="container py-lg-5 py-md-4 py-sm-4 py-0">
-                <div class="row text-center">
-                    <div class="col-lg-7 mx-auto">
-                        <h6>Services</h6>
-                        <h3 class="mt-3 mb-lg-5 mb-md-4 mb-sm-4 mb-3">What We Do</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp">
-                        <div class="d-flex flex-row justify-content-center">
-                            <div>
-                              <div class="icon icon-svg mr-4"><img src="assets/images/icon-training.png" alt=""></div>
-                            </div>
-                            <div>
-                                <h4 class="mb-2">Workshops</h4>
-                                <p>We offer packaged 1-3 day workshops for Core Python Development, Python Data Processing, Python Web Development, Linux Essentials, Git Essentials
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp">
-                        <div class="d-flex flex-row justify-content-center">
-                            <div class="icon icon-svg mr-4"><img src="assets/images/gear-icon.png" alt=""></div>
-                              <div>
-                                <h4 class="mb-2">Custom Training</h4>
-                                <p>CodeHappy can be engaged in developing custom training for your team. Our expertise lies in all things Linux and Python. It’s a broad range but it is basically anything within the spectrum of how Linux and Python is utilized in software engineering. We can talk about what your team needs and we can come up with the right course offering.
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Service End -->
-                <!-- Start deneb_service section -->
-        <section class="service_wrapper">
-            <div id="courses" class="container">
-                <div class="row text-center">
-                    <div class="col-lg-7 mx-auto">
-<!--                         <h6>Services</h6> -->
-                        <h3 class="mt-3 mb-lg-5 mb-md-4 mb-sm-4 mb-3">Training Courses</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="service_tab_wrap">
-                            <div class="service_tab_nav">
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#python-quickstart"><img src="assets/images/quickstart-icon.png" alt=""><span>Python Quickstart</span></a>
-                                    </li>
-<!--                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#programming-primer"><img src="assets/images/gem-icon.png" alt=""><span>Programming Primer</span></a>
-                                    </li>-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#python-fundamentals"><img src="assets/images/brain-icon.png" alt=""><span>Python Fundamentals</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#python-data-processing"><img src="assets/images/data-processing-icon.png" alt=""><span>Data Processing with Python</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#linux-and-git"><img src="assets/images/bash-script-git-icon.png" alt=""><span>Linux & Git Essentials</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#unit-testing"><img src="assets/images/testing-icon.png" alt=""><span>Unit Testing in Python</span></a>
-                                    </li>
-<!--                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#marketing"><img src="assets/images/icon_15.png" alt=""><span>Digital Marketing</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#analysis"><img src="assets/images/icon_16.png" alt=""><span>Business Analysis</span></a>
-                                    </li> -->
-                                </ul>
-                            </div>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div id="python-quickstart" class="tab-pane">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Python Quickstart</h2>
-                                                <p>A brown-bag session that aims to give a quick introduction to the basics of Python and its many possibilities</p>
-                                                <p>Brown-bag session Goals:
-                                                        <ul>
-                                                        <li><i class="fas fa-check"></i> Give you a quick introduction of Python, an overview of its use-cases and its ecosystem</li>
-                                                        <li><i class="fas fa-check"></i> Get you started coding in Python</li>
-                                                        <li><i class="fas fa-check"></i> Inspire participants to use Python for work and hobby projects</li>
-                                                    </ul>
-                                                </p>
-                                                <p>Prerequisite: None</p>
-                                                <p>Duration: 1-hour</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/python-quickstart.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="python-fundamentals" class="tab-pane fade">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Python Fundamentals</h2>
-                                                <p>This workshop is designed to introduce participants to the world of programming through Python, one of the most versatile and widely-used languages in the industry.</p>
-                                                <p>Over the course of two days, participants will be guided through the foundational elements of Python and then progress to more advanced topics, all while building a practical project.
-                                                </p>
-                                                <p>The workshop will be interactive, featuring quizzes, exercises, and Q&A sessions.
-                                                </p>
-                                                 <p>Workshop Goals:
-                                                    <ul>
-                                                        <li><i class="fas fa-check"></i> Understand Python's Place in Today's World</li>
-                                                        <li><i class="fas fa-check"></i> Hands-on Experience in setting up, creating, and executing Python programs.</li>
-                                                        <li><i class="fas fa-check"></i> Solid Understanding of key data types, variables, and strong typing principles.</li>
-                                                        <li><i class="fas fa-check"></i> Develop and Refine a Practical Python Project from Scratch.</li>
-                                                        <li><i class="fas fa-check"></i> Gain Advanced Techniques (modular coding with functions and file management)</li>
-                                                        <li><i class="fas fa-check"></i> Confidence in Tackling Real-world Python Challenges.<li>
-                                                    </ul>
-                                                </p>
-                                                <p>Prerequisite: None</p>
-                                                <p>Duration: 2-days @ 6hrs/day</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/python-fundamentals2.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="python-data-processing" class="tab-pane active">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Data Processing with Python</h2>
-                                                <p>This comprehensive workshop provides a deep dive into the fundamentals of data processing, with a special focus on data manipulation using the Python programming language.</p>
-                                                <p>Participants will gain practical experience by working with a variety of real-world data types, and will be equipped with the skills and confidence to initiate their own data processing projects.</p>
-                                                <p>The workshop also introduces basic data visualization techniques and demonstrates the use of AI tools like ChatGPT to assist in coding.</p>
-                                                <p>Workshop Goals:
-                                                        <ul>
-                                                        <li><i class="fas fa-check"></i> Understand the Basics of Data Processing</li>
-                                                        <li><i class="fas fa-check"></i> Practical Python Skills for Data Manipulation</li>
-                                                        <li><i class="fas fa-check"></i> Hands-On Experience with Real-World Data</li>
-                                                        <li><i class="fas fa-check"></i> Confidence in Starting Your Own Data Processing Projects</li>
-                                                        <li><i class="fas fa-check"></i> Basic Data Visualization Skills</li>
-                                                        <li><i class="fas fa-check"></i> Leverage AI Tools for Coding</li>
-                                                    </ul>
-                                                </p>
-                                                <p>Prerequisite: None</p>
-                                                <p>Duration: 2-days</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/data-processing.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="linux-and-git" class="tab-pane fade">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Linux & Git Essentials</h2>
-                                                <p>This course aims to equip the students with skills needed to understand how to work in a Linux environment and utilize version control in their software projects.
-                                                </p>
-                                                <p>Prerequisite: None</p>
-                                                <p>Duration: 3-days @ 6hrs/day</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/linux-and-git.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="unit-testing" class="tab-pane fade">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Unit Testing in Python</h2>
-                                                <p>This course aims to introduce unit testing using the pytest library as part of a developer’s workflow and imparts an attitude towards delivering quality software that meets business objectives.</p>
-                                                <p>Prerequisite: Python Fundamentals</p>
-                                                <p>Duration: 1-day @ 6hrs/day</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/unit-testing.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="marketing" class="tab-pane fade">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Digital Marketing</h2>
-                                                <p>Etiam suscipit sed sem nec elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed accumsan, urna vel finibus sollicitudin, urna sem fringilla nisi.</p>
-                                                <p>In vel ante tristique, blandit nisi in, feugiat nisl. Nunc sagittis pretium arcu, ac consectetur diam feugiat vitae. Pellentesque sit amet elit facilisis, sodales nisl non, luctus ex. Donec molestie consequat velit, id imperdiet arcu sollicitudin.</p>
-                                                <p>Praesent ac tempus ipsum, eget consequat ante. Sed consequat, elit euismod finibus faucibus.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/course_5.png" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="analysis" class="tab-pane fade">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-6">
-                                            <div class="deneb_content_box">
-                                                <h2>Business Analysis</h2>
-                                                <p>Etiam suscipit sed sem nec elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed accumsan, urna vel finibus sollicitudin, urna sem fringilla nisi.</p>
-                                                <p>In vel ante tristique, blandit nisi in, feugiat nisl. Nunc sagittis pretium arcu, ac consectetur diam feugiat vitae. Pellentesque sit amet elit facilisis, sodales nisl non, luctus ex. Donec molestie consequat velit, id imperdiet arcu sollicitudin.</p>
-                                                <p>Praesent ac tempus ipsum, eget consequat ante. Sed consequat, elit euismod finibus faucibus.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="deneb_img_box">
-                                                <img src="assets/images/service.jpg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- tab pane -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End deneb_service section -->
-
-        <!-- Start Portfolio Area -->
-<!-- 		<section class="portfolio_area section-margin portfolio-three pb-lg-5  pb-md-4 pb-4" id="portfolio">
-			<div class="container mb-5">
-			<div class="row">
-				<div class="col-lg-7 mx-auto mb-5">
-					<div class="text-center">
-                        <h6>Portfolio</h6>
-						<h3 class="mt-3">Our Works</h3>
-					</div>
-				</div>
-			</div>
-
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".popular">popular</li>
-					<li data-filter=".latest"> latest</li>
-					<li data-filter=".following">following</li>
-					<li data-filter=".upcoming">upcoming</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-				<div class="row portfolio-grid">
-					<div class="grid-sizer col-md-3 col-lg-3"></div>
-					<div class="col-lg-6 col-md-6 all following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p1.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all latest popular upcoming">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p4.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 all latest following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p2.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-6 all latest upcoming">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p3.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all popular">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p6.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 all popular latest following">
-						<div class="single_portfolio">
-							<img class="img-fluid w-100" src="assets/images/portfolio/p5.jpg" alt="">
-							<div class="overlay"></div>
-							<div class="short_info">
-								<h4><a href="portfolio-details.html">Lens Mockup Design</a></h4>
-								<p>Art, Illustration</p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section> -->
-    <!-- End Portfolio Area -->
-
-        <!-- Start deneb_skill section -->
-        <section id="why-us" class="deneb_skill py-5">
-            <div class="container py-lg-5 py-md-4 py-sm-4 py-0">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 pr-lg-5">
-                        <h6 class="mb-3">Why Us</h6>
-                        <h3>Why Choose Us?</h3>
-                        <p class="mt-3 mb-4">All our training courses are designed to be productive, industry-relevant and maximizes the learner's focused time during the sessions.</p>
-                        <div class="skill_wrapper">
-<!--                             <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Cost-effective</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">You will learn programming from actual Python Software Engineers with 10+ years of industry experience.</p></div>
-                                </div>
-                            </div> -->
-                            <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Productive Output</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">Learn "enough to be dangerous". Given the relatively short span of time you'll need to spend on each course, there's a productive output at the end.</p></div>
-                                </div>
-                            </div>
-                            <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Industry-Relevant Curriculum</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">You will learn programming from actual Python Software Engineers with 15 years of industry experience.</p></div>
-                                </div>
-                            </div>
-                            <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Expert Guidance</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">Have Python pros at your side. They'll help you navigate the complexities of software engineering, and ensure you always choose the right tool for the job.</p></div>
-                                </div>
-                            </div>
-                            <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Maximized Focused Time</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">Each session is designed as a focused time for you to learn and apply the topics. When you get stuck or have clarifying questions, there's someone who can guide you and answer your question rightaway.</p></div>
-                                </div>
-                            </div>
-                            <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Customizable Training Solutions</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">There is rarely a one size fits all solution for anything. We have the capability to tailor-fit training solutions as well as the delivery method according to your company's goals and needs.</p></div>
-                                </div>
-                            </div>
-<!--                             <div class="single_bar">
-                                <div class="progress_title">
-                                    <h5><i class="fas fa-check"></i> Quantitative & Qualitative Metrics</h5>
-                                </div>
-                                <div>
-                                    <div><p class="mt-3 mb-4">Each session is designed as a focused time for you to learn and apply the topics. When you get stuck or have clarifying questions, there's someone who can guide you and answer your question rightaway.</p></div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="assets/images/why-choose-us.png" alt="build" class="img-fluid wow fadeInRight my-lg-0 my-md-0 my-sm-4 my-3">
-                    </div>
-                </div>
-                <div id="values" class="row align-items-center mt-5 pt-lg-5 pt-md-5 pt-sm-5 pt-0">
-                    <div class="col-lg-6">
-                        <img src="assets/images/our-values.png" alt="code" class="img-fluid wow fadeInLeft my-lg-0 my-md-0 my-sm-4 my-3">
-                    </div>
-                    <div class="col-lg-6 pl-lg-4">
-                        <h6 class="mb-3">Values</h6>
-                        <h3>Our Values</h3>
-                        <p class="my-4">Our work is defined by our 3 pillars:</p>
-<!--                         <p class="mb-4">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Nullam id dolor id nibh. Fusce dapibus, tellus ac cursus commodo.</p> -->
-                        <ul>
-                            <li><strong>Python and Open Source.</strong> We focus on Python and Open Source Technologies. Python is our programming language of choice for work and hobby projects because it's very powerful yet still simple, practical and fun to use. Open Source because the open source culture is more than just about reusing free code to get products to market faster. It is an ethos that values openness, collaboration, and excellence.</li>
-                            <li><strong>Software Craftsmanship.</strong> We value and promote software craftsmanship.</li>
-                            <li><strong>Engineering Culture.</strong> We believe that a healthy team culture is key to building a passionate and high-performing team.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Team Start -->
-        <section id="team" class="team-area pb-5">
-            <div class="container text-center pb-lg-5 pb-0">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6>Team</h6>
-                        <h3 class="mt-3 mb-5">Our Team</h3>
-                    </div>
-                </div>
-                <div class="row align-items-center clients text-center">
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="team px-4 py-5 my-2">
-                            <img src="assets/images/matt.jpg" alt="team">
-                            <h4 class="mt-3 mb-2">Matt Lebrun</h4>
-                            <p>Co-founder and Principal Trainer</p>
-<!--                             <h5>10+ yrs experience in various industries, startups, and the academe.
-                            </h5> -->
-                            <ul class="social mt-3">
-                                <li><a href="https://www.linkedin.com/in/cr8ivecodesmith"><i class="fab fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="team px-4 py-5 my-2">
-                            <img src="assets/images/micaela.jpg" alt="team">
-                            <h4 class="mt-3 mb-2">Micaela Reyes</h4>
-                            <p>Co-founder and Training Advisor</p>
-<!--                             <h5>10+ yrs experience in telco systems, large-scale web applications, and various startup SaaS platforms.
-                            </h5> -->
-                            <ul class="social mt-3">
-                                <li><a href="https://www.linkedin.com/in/codemickeycode"><i class="fab fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Team End -->
-    <!-- Testimonial Start -->
-    <section class="testimonial-three pb-lg-5">
-<!--         <div class="container pb-lg-5 pb-0">
-            <div class="row">
-                <div class="col-lg-7 mx-auto text-center mb-5">
-                    <h6>Testimonial</h6>
-                    <h3 class="mt-3">What People Say</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="testimonial-slider" class="owl-carousel">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="assets/images/t1.png">
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
-                            </p>
-                            <div class="testimonial-profile">
-                                <h3 class="title">williamson-</h3>
-                                <span class="post">Web Developer</span>
-                            </div>
-                        </div>
-
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="assets/images/t2.png">
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
-                            </p>
-                            <div class="testimonial-profile">
-                                <h3 class="title">Kristina-</h3>
-                                <span class="post">Web Designer</span>
-                            </div>
-                        </div>
-
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="assets/images/t3.png">
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
-                            </p>
-                            <div class="testimonial-profile">
-                                <h3 class="title">Steve Thomas-</h3>
-                                <span class="post">Web Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row">
-                <div class="col-lg-7 mx-auto text-center mb-5">
-                    <h6>Clients and Partners</h6>
-                    <h3 class="mt-3">Trusted by</h3>
-                </div>
-            </div>
-            <div class="row align-items-center clients text-center mt-4">
-                <div class="col-lg-3 client">
-                    <img src="assets/images/ethos-bytes-logo-2.png" alt="client" class="wow fadeInLeft">
-                </div>
-                <div class="col-lg-3 client">
-                    <img src="assets/images/apperph-logo.png" alt="client" class="wow fadeInLeft">
-                </div>
-                <div class="col-lg-3 client">
-                    <img src="assets/images/smc-logo.png" alt="client" class="wow fadeInLeft">
-                </div>
-                <div class="col-lg-3 client">
-                    <img src="assets/images/axa-logo.jpg" alt="client" class="wow fadeInLeft">
-                </div>
-            </div>
-            <div class="row align-items-center clients text-center mt-4">
-                <div class="col-lg-3 client">
-                    <img src="assets/images/phoenix-one-logo.png" alt="client" class="wow fadeInLeft">
-                </div>
-                <div class="col-lg-3 client">
-                    <img src="assets/images/lattice-semi-logo.png" alt="client" class="wow fadeInLeft">
-                </div>
-                <div class="col-lg-3 client">
-                    <img src="assets/images/lendi-group-logo.png" alt="client" class="wow fadeInLeft">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial End -->
-
-
-    <!-- Start Blog Area -->
-<!-- 	<section class="blog-area blog-three section-gap mt-lg-0 mt-md-5 mt-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="text-center">
-                        <h6>Blog</h6>
-						<h3 class="mt-3 mb-lg-5 mb-md-4 mb-sm-4 mb-4">Our blog</h3>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="assets/images/b1.jpg" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="far fa-user"></i> Admin post</a>
-								<a href="#"><i class="far fa-calendar"></i> Sep 20, 2020</a>
-							</div>
-							<a class="d-block" href="blog-details.html">
-								<h4>Shall every fourth lesser have...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="link_btn">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="assets/images/b2.jpg" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="far fa-user"></i> Admin post</a>
-								<a href="#"><i class="far fa-calendar"></i> Aug 29, 2020</a>
-							</div>
-							<a class="d-block" href="blog-details.html">
-								<h4>Horse play gorless knees up...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="link_btn">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog">
-						<div class="thumb">
-							<img class="img-fluid" src="assets/images/b3.jpg" alt="">
-						</div>
-						<div class="short_details">
-							<div class="meta-top d-flex">
-								<a href="#"><i class="far fa-user"></i> Admin post</a>
-								<a href="#"><i class="far fa-calendar"></i> Jul 14, 2020</a>
-							</div>
-							<a class="d-block" href="blog-details.html">
-								<h4>Quisque felis ligula semper...</h4>
-							</a>
-							<div class="text-wrap">
-								<p>
-									Have whose a two night earth she set you creeping replenish place whales move Forth first him seed green.
-								</p>
-							</div>
-							<a href="#" class="link_btn">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- End Blog Area -->
-
-
-<!--Remaining section-->
-
-<!-- Start footer -->
-
-<footer class="footer">
-    <section class="footer-top py-5">
-        <div class="container py-lg-5 py-0">
-            <div class="row widget_wrapper">
-                <div class="col-lg-4">
-                    <div class="widget widegt_about">
-                        <div class="widget_title">
-                            <img src="assets/images/codehappy-logo-small2.png" class="img-fluid" alt="">
-                        </div>
-                        <p>Python + Open Source + Software Craftsmanship + Engineering Culture
-                        </p>
-                        <p>Hone your craft. Love what you do.</p>
-                        <ul class="social">
-                            <li><a href="https://www.linkedin.com/company/codehappyph"><i class="fab fa-linkedin-f"></i></a></li>
-                            <li><a href="https://www.facebook.com/codehappyph"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/codehappyph"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/codehappyph"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-<!--                 <div class="col-lg-2">
-                    <div class="widget widget_link">
-                        <div class="widget_title">
-                            <h4>Links</h4>
-                        </div>
-                        <ul>
-                            <li><i class="far fa-clone"></i><a href="#">About Us</a></li>
-                            <li><i class="far fa-clone"></i><a href="#">Services</a></li>
-                            <li><i class="far fa-clone"></i><a href="#">Portfolio</a></li>
-                            <li><i class="far fa-clone"></i><a href="#">Blog</a></li>
-                            <li><i class="far fa-clone"></i><a href="#">Contact</a></li>
-                            <li><i class="far fa-clone"></i><a href="#">Tears</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="col-lg-4">
-                    <div class="widget widget_contact">
-                        <div class="widget_title">
-                            <h4>Contact Us</h4>
-                        </div>
-                        <div class="contact_info">
-<!--                             <div class="single_info">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="info">
-                                    <p><a href="tel:+919246147999">1800-121-3637</a></p>
-                                    <p><a href="tel:+919246147999">+91 924-614-7999</a></p>
-                                </div>
-                            </div> -->
-                            <div class="single_info">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info">
-                                    <p><a href="mailto:hello@codehappy.ph">hello@codehappy.ph</a></p>
-                                </div>
-                            </div>
-                            <div class="single_info">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="info">
-                                    <p>Makati City, Metro Manila,<span>Philippines.</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="widget">
-                        <div class="widget_title">
-                            <h4>Subscribe</h4>
-                        </div>
-                        <p>Get notified when we run public trainings and other news.</p>
-                        <div id="mc_embed_signup">
-                            <form action="https://codehappy.us1.list-manage.com/subscribe/post?u=4b5af31874588cf2942079c4b&amp;id=6e1f512bde" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <input type="email" value="" name="EMAIL" class="form_control my-4" id="mce-EMAIL" placeholder="Your Email" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                        <input type="text" name="b_4b5af31874588cf2942079c4b_6e1f512bde" tabindex="-1" value="">
-                                    </div>
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="deneb_btn">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-
-
-<!--End mc_embed_signup-->
-            </div>
-        </div>
-    </section>
-    <div class="copyright_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright_text py-2">
-                        <p>Copyright © 2021 <span>CodeHappy</span>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeHappy | Software Engineering &amp; Applied AI Training Philippines</title>
+  <meta name="description" content="Practical software engineering and applied AI training in the Philippines. CodeHappy customizes team learning programs around your use cases, technology stack, and goals.">
+  <meta name="theme-color" content="#092033">
+  <link rel="canonical" href="https://codehappy.ph/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_PH">
+  <meta property="og:site_name" content="CodeHappy">
+  <meta property="og:title" content="CodeHappy | Software Engineering &amp; Applied AI Training Philippines">
+  <meta property="og:description" content="Hone your craft. Love what you do. Hands-on software engineering and AI training shaped around your team’s use cases and context.">
+  <meta property="og:url" content="https://codehappy.ph/">
+  <meta property="og:image" content="https://codehappy.ph/assets/images/codehappy-logo-small.png">
+  <meta property="og:image:alt" content="CodeHappy">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CodeHappy | Software Engineering &amp; Applied AI Training">
+  <meta name="twitter:description" content="Hands-on software engineering and AI training shaped around your team’s use cases, technology stack, and goals.">
+  <meta name="twitter:image" content="https://codehappy.ph/assets/images/codehappy-logo-small.png">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/refresh.css">
+  <script src="assets/js/refresh.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="CodeHappy home"><img src="assets/images/codehappy-logo-small.png" alt="CodeHappy" width="197" height="50"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+      <nav id="site-navigation" aria-label="Main navigation">
+        <a href="#about-us">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#team">Our Team</a>
+        <a class="nav-contact" href="#contact">Contact Us <span aria-hidden="true">→</span></a>
+      </nav>
     </div>
-</footer>
-<!-- <div w3-include-html="footer.html"></div> -->
-<!-- End footer -->
-<!-- <script>
-includeHTML();
-</script> -->
+  </header>
+  <main id="main">
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Python training built around <span>your team’s needs.</span></h1>
+          <p class="hero-tagline">Hone your <span>craft.</span> <span>Love</span> what you do.</p>
+          <p class="lead">Hands-on training to help teams build better software, integrate AI into their engineering workflows, and build and operate AI-enabled solutions. Tailored to your tools, challenges, and goals.</p>
+          <div class="actions"><a class="button" href="https://calendly.com/codehappy-mickey/15min-call">Book a free consultation <span aria-hidden="true">→</span></a></div>
+        </div>
+        <figure class="hero-illustration">
+          <img src="assets/images/hero.jpg" alt="A coding workspace with coffee, books, a plant, and a Python rocket ready to take off" width="1900" height="1028" fetchpriority="high">
+          <figcaption><span class="eyebrow">The CodeHappy way</span><span>Understand the fundamentals. Learn by building. Stay curious. Build thoughtfully. <strong>Have fun.</strong></span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-<!-- jquery  -->
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-<!--modernizr js-->
-<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-<!-- Bootstrap js  -->
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/vendor/popper.min.js"></script>
-<!-- slick fader js  -->
-<script src="assets/js/vendor/slick.min.js"></script>
-<!-- isotope js  -->
-<script src="assets/js/vendor/isotope.min.js"></script>
-<!-- imageloaded js-->
-<script src="assets/js/vendor/imagesloaded.min.js"></script>
-<!--sidebar js-->
-<script src="assets/js/vendor/sidebar-menu.js"></script>
-<!--wow js-->
-<script src="assets/js/vendor/wow.min.js"></script>
-<!-- owl js  -->
-<script src="assets/owl-carousel/owl.carousel.min.js"></script>
-<!-- video js  -->
-<script src="assets/js/grt-youtube-popup.js"></script>
-<!-- Counter js  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<!-- custom js  -->
-<script src="assets/js/custom.js"></script>
+    <section class="section" id="about-us" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-intro">
+          <div class="about-intro-copy">
+            <p class="eyebrow">01 / About Us</p>
+            <h2 id="about-title">A small team.<br>A shared love for the craft.</h2>
+            <p class="lead">We’re a small team of Software Engineers from the Philippines with over a decade of industry experience and an <strong>insane love for what we do.</strong></p>
+          </div>
+          <img class="about-illustration" src="assets/images/about-us.png" alt="Two smiling CodeHappy characters sharing a coffee break" width="1900" height="1206" loading="lazy">
+        </div>
+        <div class="about-story">
+          <h3>So what’s our story?</h3>
+          <div class="about-copy">
+            <p>It started at a point when we became in charge of hiring new people for our dev teams. It was when we noticed a shortage of tech talents with the right skills.</p>
+            <p>Realizing that a key problem lies with the huge gap between the academe and the industry, we developed training and coaching programs to fill those gaps.</p>
+            <p>Since then, we made it our personal mission to teach practical software development skills for tech professionals and leaders in the Philippines.</p>
+            <p>Tech is a very democratizing career and skills pay the bills. Our goal is to empower individuals with the right skills and mindset for honing their craft and helping them succeed.</p>
+            <p class="about-close">We believe skills truly fulfill their potential and purpose when paired with passion. <strong>That’s why we’re called CodeHappy.</strong></p>
+          </div>
+        </div>
+        <aside class="about-mission" aria-label="Our mission">
+          <p>As AI changes how software is built, our mission remains the same: help people develop the skills, engineering judgment, and curiosity to do meaningful work.</p>
+        </aside>
+        <!-- Deferred for MVP: repeated testimonial teaser. Restore by removing this comment wrapper.
+        <aside class="story-proof" aria-label="A client’s perspective">
+          <p>“Fostered a culture of learning and growth” <span>— Myk Ogbinar, San Miguel Corporation</span></p>
+          <a class="text-link" href="#client-testimonial">Read the client’s perspective <span aria-hidden="true">→</span></a>
+        </aside>
+        -->
+      </div>
+    </section>
 
+    <!-- Deferred for next version: detailed learning-area catalog. Restore by removing this comment wrapper, removing the matching catalog anchor aliases from Services, and updating section numbering.
+    <section class="section" id="what-we-teach" aria-labelledby="teach-title">
+      <span id="courses" class="anchor-alias"></span><span id="work" class="anchor-alias"></span><span id="python-quickstart" class="anchor-alias"></span><span id="python-fundamentals" class="anchor-alias"></span><span id="python-data-processing" class="anchor-alias"></span><span id="linux-and-git" class="anchor-alias"></span><span id="unit-testing" class="anchor-alias"></span>
+      <div class="container">
+        <div class="section-intro"><div><p class="eyebrow">02 / Learning areas</p><h2 id="teach-title">What we teach</h2><p class="learning-promise">Build better software. Become better engineers.</p></div><p>Start with the capabilities your team needs. From engineering foundations to using and building with AI, we’ll connect the learning to your work.</p></div>
+        <p class="section-note">Choose a starting point below. We’ll tailor the topics, exercises, and depth to your team.</p>
+        <div class="learning-grid">
+          <article class="learning-card">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">&lt;/&gt;</span><span class="small-label">BUILD THE FOUNDATIONS</span></div>
+            <h3>Software Engineering</h3>
+            <p class="best-for"><strong>Best for</strong> Teams strengthening programming and engineering foundations.</p>
+            <p>Develop practices for creating reliable, maintainable software.</p>
+            <h4>Topics may include</h4><ul><li>Python fundamentals and advanced practices</li><li>Data processing and automation</li><li>Python backend and web development</li><li>APIs and system integration</li><li>Linux and Git essentials</li><li>Software testing with pytest</li><li>SQL essentials</li><li>Software design and engineering best practices</li></ul>
+          </article>
+          <article class="learning-card">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">↗</span><span class="small-label">EVOLVE YOUR PRACTICE</span></div>
+            <h3>AI-Assisted Software Engineering</h3>
+            <p class="best-for"><strong>Best for</strong> Developers applying AI to their development workflow.</p>
+            <p>Use AI to support development while keeping engineering judgment, quality, and accountability.</p>
+            <p class="example-exercise"><strong>Example exercise</strong> Review AI-generated code against your team’s conventions and verify it with tests.</p>
+            <h4>Topics may include</h4><ul><li>AI-assisted coding</li><li>Agentic software development workflows</li><li>Context engineering</li><li>AI-assisted testing and debugging</li><li>Verification and validation of AI-generated output</li><li>Code review and refactoring</li></ul>
+          </article>
+          <article class="learning-card">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">{ }</span><span class="small-label">CONNECT AI TO REAL NEEDS</span></div>
+            <h3>Applied AI Engineering</h3>
+            <p class="best-for"><strong>Best for</strong> Teams building AI capabilities into software products.</p>
+            <p>Connect AI capabilities to practical applications and learn how to evaluate their behavior.</p>
+            <p class="example-exercise"><strong>Example exercise</strong> Prototype a document-search assistant and evaluate its answers against a sample question set.</p>
+            <h4>Topics may include</h4><ul><li>Large language model integration</li><li>Retrieval-augmented generation (RAG)</li><li>AI agents and tool calling</li><li>AI evaluations</li><li>AI system design and integration</li><li>Reliability and responsible AI implementation</li></ul>
+          </article>
+          <article class="learning-card">
+            <div class="card-top"><span class="card-icon" aria-hidden="true">◎</span><span class="small-label">NAVIGATE CHANGE</span></div>
+            <h3>Engineering Leadership &amp; Technology Adoption</h3>
+            <p class="best-for"><strong>Best for</strong> Technical leaders guiding engineering practices and AI adoption.</p>
+            <p>Develop the understanding and judgment to make thoughtful technology decisions.</p>
+            <h4>Topics may include</h4><ul><li>Systems thinking</li><li>Architectural decision-making</li><li>Engineering culture and practices</li><li>AI-enabled engineering workflows</li><li>Responsible AI adoption</li><li>Technical capability building</li></ul>
+          </article>
+        </div>
+        <div class="section-outro"><p><strong>Have something else in mind?</strong> We’re always open to exploring learning opportunities aligned with your team’s goals and our expertise.</p><a class="text-link" href="#contact">Let’s explore it <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
 
+    -->
+
+    <section class="section work-with-us" id="services" aria-labelledby="how-title">
+      <span id="how-we-work" class="anchor-alias"></span><span id="what-we-do" class="anchor-alias"></span>
+      <span id="what-we-teach" class="anchor-alias"></span><span id="courses" class="anchor-alias"></span><span id="work" class="anchor-alias"></span><span id="python-quickstart" class="anchor-alias"></span><span id="python-fundamentals" class="anchor-alias"></span><span id="python-data-processing" class="anchor-alias"></span><span id="linux-and-git" class="anchor-alias"></span><span id="unit-testing" class="anchor-alias"></span>
+      <div class="container engagement-grid">
+        <div class="engagement-intro"><p class="eyebrow">02 / Services</p><h2 id="how-title">What We Do</h2><p>We customize company training around the work your team actually does: your use cases, technology stack, experience, and goals.</p><p>In the AI era, context matters. We help teams explore where AI fits into their workflows and develop the engineering judgment to evaluate the results.</p><p class="quiet">Customization runs through every format. We’ll shape the content, exercises, and pace together.</p><a class="text-link" href="#contact">Discuss your team’s training <span aria-hidden="true">→</span></a></div>
+        <div class="formats" aria-labelledby="formats-title">
+          <h3 id="formats-title">A format that fits your team.</h3>
+          <article><span aria-hidden="true">01</span><div><h4>Workshops</h4><p>We offer hands-on workshops for Core Python Development, Python Data Processing, Python Web Development, Linux Essentials, Git Essentials, AI-Assisted Software Engineering, Applied AI Engineering, and AI Adoption &amp; Enablement.</p></div></article>
+          <article><span aria-hidden="true">02</span><div><h4>Custom Training</h4><p>CodeHappy can be engaged in developing custom training for your team. Our expertise lies in Linux, Python, software engineering, and applied AI—from integrating AI into development workflows to building and operating AI-enabled applications. We can talk about what your team needs and come up with the right course offering.</p></div></article>
+          <!-- Deferred for next version: additional curriculum-development offering.
+          <p class="format-support"><strong>Building your own learning program?</strong> We also collaborate on curriculum, training materials, and hands-on labs.</p>
+          -->
+        </div>
+      </div>
+      <!-- Deferred for MVP: detailed learning journey. Restore by removing this comment wrapper.
+      <div class="container learning-journey" aria-labelledby="journey-title">
+        <div class="journey-intro"><p class="eyebrow">Built around your team</p><h3 id="journey-title">From your context to hands-on practice.</h3></div>
+        <ol class="journey-steps">
+          <li><span class="journey-number" aria-hidden="true">01</span><h4>Understand your context</h4><p>Start with your team’s work, experience, and learning goals.</p></li>
+          <li><span class="journey-number" aria-hidden="true">02</span><h4>Shape the learning</h4><p>Choose relevant topics, practical exercises, and a workable pace.</p></li>
+          <li><span class="journey-number" aria-hidden="true">03</span><h4>Learn through practice</h4><p>Apply concepts with practitioner guidance, feedback, and room to experiment.</p></li>
+        </ol>
+        <div class="learning-rhythm"><h4>Time to learn. Space to practice.</h4><p>Our flipped-classroom approach combines guided self-study, interactive live exercises, and time to apply learning between sessions. Materials and assessments support progress, with the schedule tailored to your team.</p></div>
+      </div>
+      -->
+    </section>
+
+    <section class="section" id="why-us" aria-labelledby="work-title">
+      <span id="our-work" class="anchor-alias"></span>
+      <div class="container">
+        <div class="section-intro"><div><p class="eyebrow">03 / Our approach</p><h2 id="work-title">Why Choose Us</h2></div><p>Our training is practical, industry-relevant, and designed to make the most of your team’s focused learning time.</p></div>
+        <div class="learning-grid">
+          <article class="learning-card"><h3>Practical Output</h3><p>Learn by building. Apply the topics through hands-on exercises grounded in real software engineering work.</p></article>
+          <article class="learning-card"><h3>Industry Experience</h3><p>Learn from practitioners with over 15 years of technology experience, bringing real-world context to Python, software engineering, and applied AI.</p></article>
+          <article class="learning-card"><h3>Expert Guidance</h3><p>Have experienced engineers at your side to answer questions, help you get unstuck, and develop the judgment to choose and evaluate the right tools.</p></article>
+          <article class="learning-card"><h3>Training That Fits Your Team</h3><p>There is rarely a one-size-fits-all solution. We tailor the content, exercises, pace, and delivery to your team’s goals and needs.</p></article>
+        </div>
+        <!-- Deferred for next version: standalone Our Work introduction.
+        <div class="section-intro"><div><p class="eyebrow">04 / Our work</p><h2>Learning through<br>real-world experience.</h2></div><p>We’ve trained and coached software engineers across fintech, telecommunications, outsourcing, and semiconductors, and worked with the Philippine Navy. Our roots are in practical Python and software engineering training, shaped around real work.</p></div>
+        -->
+        <p class="client-experience">We have trained and coached software engineers in the telecoms, fintech, and outsourcing industries, and the Philippine Navy.</p>
+        <figure class="client-story" id="client-testimonial">
+          <div class="story-context"><p class="eyebrow">A client’s perspective</p><h3>Python skills.<br>A culture of learning.</h3><p>Helping a team put Python to work for data and automation tasks.</p></div>
+          <blockquote class="story-quote"><p>“Under Matt’s guidance, CodeHappy not only provided exceptional training but also fostered a culture of learning and growth that was instrumental in our journey.”</p></blockquote>
+          <figcaption class="story-credit"><strong>Myk Ogbinar</strong><span>Data &amp; Analytics Head at San Miguel Corporation</span></figcaption>
+        </figure>
+        <div class="client-block"><h3>Organizations we’ve worked with</h3><p>Across training, coaching, and learning partnerships.</p><div class="logo-grid">
+          <div><img src="assets/images/ethos-bytes-logo-2.png" alt="Ethos Bytes" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/apperph-logo.png" alt="Apper" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/smc-logo.png" alt="San Miguel Corporation" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/axa-logo.jpg" alt="AXA" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/phoenix-one-logo.png" alt="Phoenix One" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/lattice-semi-logo.png" alt="Lattice Semiconductor" loading="lazy" width="180" height="80"></div>
+          <div><img src="assets/images/lendi-group-logo.png" alt="Lendi Group" loading="lazy" width="180" height="80"></div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section values" id="values" aria-labelledby="values-title">
+      <div class="container">
+        <div class="values-intro">
+          <div><p class="eyebrow">04 / What we believe</p><h2 id="values-title">Our Values</h2><p>Our work is defined by our 3 pillars:</p></div>
+          <img class="values-illustration" src="assets/images/our-values.png" alt="Two people learning and writing Python together over coffee" width="1900" height="1080" loading="lazy">
+        </div>
+        <div class="values-list">
+          <article><span class="pillar-symbol" aria-hidden="true">[ open ]</span><h3>Python and Open Source.</h3><p>We focus on Python and Open Source Technologies. Python is our programming language of choice for work and hobby projects because it's very powerful yet still simple, practical and fun to use. Open Source because the open source culture is more than just about reusing free code to get products to market faster. It is an ethos that values openness, collaboration, and excellence.</p></article>
+          <article><span class="pillar-symbol" aria-hidden="true">[ craft ]</span><h3>Software Craftsmanship.</h3><p>We value and promote software craftsmanship.</p></article>
+          <article><span class="pillar-symbol" aria-hidden="true">[ grow ]</span><h3>Engineering Culture.</h3><p>We believe that a healthy team culture is key to building a passionate and high-performing team.</p></article>
+        </div>
+        <p class="values-summary">Python + Open Source + Software Craftsmanship + Engineering Culture</p>
+      </div>
+    </section>
+
+    <section class="section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <p class="eyebrow">05 / Learn from practitioners</p>
+        <h2 id="team-title">Our Team</h2>
+        <div class="team-grid">
+          <article class="profile"><img class="portrait" src="assets/images/matt.jpg" alt="Matt Lebrun, CodeHappy co-founder" width="150" height="150" loading="lazy"><div><p class="eyebrow">Co-founder &amp; Principal Trainer</p><h3>Matt Lebrun</h3><a class="text-link" href="https://www.linkedin.com/in/cr8ivecodesmith">Matt on LinkedIn <span aria-hidden="true">↗</span></a></div></article>
+          <article class="profile"><img class="portrait" src="assets/images/micaela.jpg" alt="Micaela Reyes, CodeHappy co-founder" width="150" height="150" loading="lazy"><div><p class="eyebrow">Co-founder &amp; Training Advisor</p><h3>Micaela Reyes</h3><a class="text-link" href="https://www.linkedin.com/in/codemickeycode">Micaela on LinkedIn <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div>
+          <p class="eyebrow">06 / Start a conversation</p><h2 id="contact-title">Contact Us</h2>
+          <p>Tell us what your team wants to learn or build. We’ll work out the right training together.</p>
+          <a class="button" href="mailto:hello@codehappy.ph?subject=Let%E2%80%99s%20discuss%20our%20team%27s%20training&amp;body=Hello%20CodeHappy%2C%0A%0AOrganization%3A%0AGoals%3A%0ATimeline%3A">Discuss your training <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer site-footer--mvp">
+    <div class="container footer-grid"><div><a href="#top"><img src="assets/images/codehappy-logo-small.png" alt="CodeHappy home" width="197" height="50" loading="lazy"></a><p class="footer-tagline">Hone your craft. Love what you do.</p><p>Makati City, Metro Manila, Philippines</p></div>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.linkedin.com/company/codehappyph" aria-label="CodeHappy on LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.37 24H.4V7.98h4.97V24ZM2.88 5.8a2.88 2.88 0 1 1 0-5.76 2.88 2.88 0 0 1 0 5.76ZM24 24h-4.96v-7.8c0-1.86-.04-4.25-2.59-4.25-2.59 0-2.99 2.02-2.99 4.12V24H8.5V7.98h4.76v2.19h.07c.66-1.26 2.28-2.59 4.7-2.59 5.03 0 5.97 3.31 5.97 7.61V24Z"/></svg></a>
+        <a href="https://www.facebook.com/codehappyph" aria-label="CodeHappy on Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.71 4.53-4.71 1.31 0 2.68.24 2.68.24V7.9h-1.51c-1.49 0-1.96.93-1.96 1.88v2.29h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"/></svg></a>
+        <a href="https://twitter.com/codehappyph" aria-label="CodeHappy on X (Twitter)"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.64 7.58H.48l8.6-9.84L0 1.15h7.59l5.24 6.93 6.07-6.93ZM17.61 20.65h2.04L6.48 3.24H4.29l13.32 17.41Z"/></svg></a>
+        <a href="https://www.instagram.com/codehappyph" aria-label="CodeHappy on Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      </nav>
+      <!-- Deferred for MVP: newsletter, pending Mailchimp flow confirmation. Restore by removing this comment wrapper and the site-footer--mvp class.
+      <div class="newsletter"><h2>Stay in the loop.</h2><p>Occasional updates on public training and CodeHappy news.</p><form action="https://codehappy.us1.list-manage.com/subscribe/post?u=4b5af31874588cf2942079c4b&amp;id=6e1f512bde" method="post" target="_blank"><label for="newsletter-email">Email address</label><div class="subscribe-row"><input type="email" id="newsletter-email" name="EMAIL" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit" name="subscribe">Subscribe <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></button></div><div class="honeypot" aria-hidden="true"><input type="text" name="b_4b5af31874588cf2942079c4b_6e1f512bde" tabindex="-1" autocomplete="off" value=""></div><p class="form-note">Subscription opens Mailchimp in a new tab.</p></form></div>
+      -->
+    </div>
+    <div class="container footer-bottom"><span>© 2026 CodeHappy.</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+  </footer>
 </body>
 </html>

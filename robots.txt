@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /archive/
+Disallow: /index_2021-04-02.html
+
+Sitemap: https://codehappy.ph/sitemap.xml
